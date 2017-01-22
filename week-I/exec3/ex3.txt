@@ -1,0 +1,23 @@
+Functon are defined as:
+
+int stat(const char *filename, struct stat *buf);
+int lstat(const char *filename, struct stat *buf);
+int fstat(int filedesc, struct stat *buf);
+
+Where filename and filedesc are filneme or file descriptor of file.
+and where struct stat *buf is struct where returning data is saved.
+
+struct contains:
+st_dev – identifier of device containing file
+st_ino – inode number
+st_mode – protection mode; see also Unix permissions
+st_nlink – reference count of hard links
+st_uid – user identifier of owner
+st_gid – group identifier of owner
+st_rdev – device identifier (if special file)
+st_size – total file size, in bytes
+st_atime – time of last access
+st_mtime – time of last modification
+st_ctime – time of last status change
+st_blksize – preferred block size for file system I/O, which can depend upon both the system and the type of file system[3]
+st_blocks – number of blocks allocated in multiples of DEV_BSIZE (usually 512 bytes).
