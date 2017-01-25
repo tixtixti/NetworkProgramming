@@ -9,4 +9,4 @@ killall "process name"
 #kill all for certain member
 pkill -9 -u 'id -u "username"'
 #be "nice"
-nice "utility" 
+nice -n -20 "utility" 
